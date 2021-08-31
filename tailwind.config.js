@@ -27,15 +27,12 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    container: {
-      center: true
-    },
     extend: {
       colors: {
         primary: '#525266',
         secondary: '#a92121',
         accent: '#ccab25',
-      }
+      },
     },
   },
   variants: {
