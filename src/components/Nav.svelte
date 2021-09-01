@@ -11,7 +11,7 @@
   <nav class="flex items-center justify-between p-6 h-16">
     <div
       class="sm:text-lg lg:text-3xl {y > 50
-        ? 'text-black'
+        ? 'text-green-500'
         : 'text-black'} font-semibold "
     >
       Nico Herrera
@@ -26,7 +26,7 @@
             : 'text-black hover:text-green-700'} hover:cursor-pointer">Home</a
         >
         <a
-          href="#"
+          href="#about"
           class="hidden sm:inline-block transition duration-200 ease-in-out {y >
           50
             ? 'text-black hover:text-green-500'
