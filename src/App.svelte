@@ -1,12 +1,14 @@
 <script>
   import Hero from "./components/Hero.svelte";
   import Nav from "./components/Nav.svelte";
+  import About from "./components/About.svelte";
 </script>
 
-<main class="relative">
+<div>
   <Nav />
   <Hero />
-</main>
+  <About />
+</div>
 
 <style global>
   @tailwind base;
