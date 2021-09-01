@@ -2,6 +2,8 @@
   let y;
 </script>
 
+<svelte:window bind:scrollY={y} />
+
 <!-- Create Navbar Menu -->
 <header
   class="{y > 50
@@ -10,7 +12,7 @@
 >
   <nav class="flex items-center justify-between p-6 h-16">
     <div
-      class="sm:text-lg lg:text-3xl {y > 50
+      class="mobile:text-xl lg:text-3xl {y > 50
         ? 'text-green-500'
         : 'text-black'} font-semibold "
     >
@@ -57,5 +59,3 @@
     </ul>
   </nav>
 </header>
-
-<svelte:window bind:scrollY={y} />

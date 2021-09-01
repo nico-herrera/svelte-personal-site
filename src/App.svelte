@@ -18,4 +18,28 @@
   html {
     scroll-behavior: smooth;
   }
+
+  @layer utilities {
+    .h-big {
+      height: 700px;
+    }
+
+    .flex-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .active {
+      border-width: 5px;
+      border-top: 1px solid lightgreen;
+      border-bottom: 1px solid lightgreen;
+    }
+  }
 </style>

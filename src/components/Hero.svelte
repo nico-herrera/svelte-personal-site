@@ -25,9 +25,9 @@
   >
     <a
       href="#"
-      class="h-6 bg-green-100 w-56 h-20 flex justify-center items-center rounded-2xl hover:bg-green-200 transition duration-200 ease-in-out"
+      class="h-6 bg-green-100 w-40 h-12 flex justify-center items-center rounded-lg hover:bg-green-200 transition duration-200 ease-in-out"
     >
-      <button class="text-3xl">Contact Me</button>
+      <button class="text-2xl">Contact Me</button>
     </a>
   </div>
 </section>

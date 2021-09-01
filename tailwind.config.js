@@ -18,9 +18,14 @@ module.exports = {
         accent: '#ccab25',
       },
     },
+    screens: {
+      'mobile': '375px'
+    }
   },
   variants: {
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [],
 }
