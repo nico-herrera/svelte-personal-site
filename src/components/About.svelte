@@ -18,14 +18,6 @@
       <span class="hover:text-green-600 transition duration-100 ease-in-out"
         >Developer</span
       >
-      /
-      <span class="hover:text-red-500 transition duration-100 ease-in-out"
-        >Christmas
-      </span><span
-        class="hover:text-red-500 transition duration-100 ease-in-out"
-      >
-        Lover</span
-      >
     </h3>
     <p class="text-sm lg:text-lg p-2">
       Full-Stack Web Developer with a passion for UI and flawless backend
