@@ -1,35 +1,46 @@
 <script>
   import Typewriter from "svelte-typewriter";
+  import Snowflakes from "./Snowflakes.svelte";
+  let y;
 </script>
+
+<svelte:window bind:scrollY={y} />
 
 <section
   id="home"
-  style="background-image: url(images/forest.jpeg)"
-  class="h-screen bg-nature w-full bg-no-repeat bg-cover bg-center relative font-sans"
+  style="background-image: url(images/christmas-bg.jpeg)"
+  class="h-screen bg-nature w-full bg-no-repeat bg-cover bg-center relative scroll-snap-y"
 >
+  {#if y < 700}
+    <Snowflakes />
+  {/if}
   <div
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-    w-3/4 md:w-2/5 mx-auto flex justify-center items-center flex-col"
+    w-3/4 md:w-2/5 lg:w-2/5 h-40 lg:h-52 mx-auto flex justify-evenly items-center flex-col border-t-2 border-b-2 border-dashed border-white text-white"
   >
-    <!-- <div class="uppercase text-xl">Welcome to my portfolio</div> -->
-    <Typewriter interval={50} loop={true}>
-      <p class="text-6xl font-serif">Software Engineer</p>
-      <p class="text-6xl font-serif">Designer</p>
-      <p class="text-6xl font-serif">Entrepreneur</p>
-    </Typewriter>
+    <h2 class="text-3xl md:4xl lg:text-5xl xl:text-6xl tracking-wide">
+      Nico Herrera
+    </h2>
+    <p class="text-lg md:text-xl lg:text-2xl tracking-wide">
+      <Typewriter interval={50} loop={true}>
+        <span class="text-lg md:text-xl lg:text-2xl">web</span>
+        <span class="text-lg md:text-xl lg:text-2xl">mobile</span>
+        <span class="text-lg md:text-xl lg:text-2xl">full-stack</span>
+        development
+      </Typewriter>
+    </p>
   </div>
-
-  <div
-    class="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-  w-3/4 md:w-2/5 mx-auto flex justify-center items-center"
+  <a
+    href="#about"
+    class="absolute top-60prc left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2
+     border-dotted border-green-400 rounded-md bg-red-500 hover:bg-red-600 w-36 h-12 lg:w-40 lg:h-14
+     flex-center
+mx-auto"
   >
-    <a
-      href="#"
-      class="h-6 bg-green-100 w-40 h-12 flex justify-center items-center rounded-lg hover:bg-green-200 transition duration-200 ease-in-out"
+    <button class="text-white tracking-wide text-base lg:text-xl"
+      >About Me</button
     >
-      <button class="text-2xl">Contact Me</button>
-    </a>
-  </div>
+  </a>
 </section>
 
 <style>

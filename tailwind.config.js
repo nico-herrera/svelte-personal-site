@@ -17,9 +17,6 @@ module.exports = {
         secondary: '#a92121',
         accent: '#ccab25',
       },
-    },
-    screens: {
-      'mobile': '375px'
     }
   },
   variants: {
