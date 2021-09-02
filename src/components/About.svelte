@@ -1,7 +1,7 @@
 <script></script>
 
 <section class="h-96 w-full flex-center relative ">
-  <span id="about" class="absolute negtop-30perc" />
+  <span id="about" class="absolute -top-16 lg:-top-24" />
   <div
     class="h-full w-11/12 lg:w-8/12 flex justify-center text-right flex-col text-black"
   >

@@ -13,7 +13,7 @@
     : 'bg-black bg-opacity-30'} w-full p-1 lg:p-5 fixed top-0 z-50 transition duration-500 ease-in-out"
 >
   <nav
-    class="flex items-center justify-around p-6 h-24 lg:h-16 flex-row space-x-4"
+    class="flex items-center justify-around p-6 h-16 lg:h-16 flex-row space-x-4"
   >
     <div
       class="{y > 50 ? 'text-green-500' : 'text-white'} {x < 600
@@ -24,7 +24,7 @@
     </div>
     <ul>
       {#if x < 600}
-        <div class="absolute top-8 left-0 ">
+        <div class="absolute top-3 left-0 ">
           <BurgerMenu
             width="225px"
             backgroundColor="#EF4444"

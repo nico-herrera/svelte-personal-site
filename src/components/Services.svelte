@@ -1,6 +1,6 @@
 <!-- what i offer section -->
 <section class="h-auto bg-green-500 relative p-10">
-  <span id="services" class="absolute -top-24" />
+  <span id="services" class="absolute -top-16 lg:-top-24" />
   <div class="flex-center h-10perc">
     <h3
       class="text-3xl lg:text-5xl font-semibold tracking-wide pb-1 mb-8 border-b-2 border-dashed border-white"
