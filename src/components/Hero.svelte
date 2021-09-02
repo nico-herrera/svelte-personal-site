@@ -12,7 +12,7 @@
   style={x < 600
     ? "background-image: url(images/lights.jpeg)"
     : "background-image: url(images/christmas-bg.jpeg)"}
-  class="h-screen w-full bg-no-repeat bg-cover bg-right lg:bg-center relative scroll-snap-y"
+  class="h-screen w-full bg-no-repeat bg-cover bg-right lg:bg-center relative"
 >
   {#if y < 500}
     <Snowflakes />

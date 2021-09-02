@@ -10,10 +10,10 @@
 <header
   class="{y > 50
     ? 'bg-white shadow-lg'
-    : 'bg-black bg-opacity-30'} w-full p-1 lg:p-5 fixed top-0 z-50 transition duration-500 ease-in-out scroll-snap-y"
+    : 'bg-black bg-opacity-30'} w-full p-1 lg:p-5 fixed top-0 z-50 transition duration-500 ease-in-out"
 >
   <nav
-    class="flex items-center justify-around p-6 h-24 lg:h-16 flex-row space-x-4 smooth-scroll"
+    class="flex items-center justify-around p-6 h-24 lg:h-16 flex-row space-x-4"
   >
     <div
       class="{y > 50 ? 'text-green-500' : 'text-white'} {x < 600
@@ -24,7 +24,7 @@
     </div>
     <ul>
       {#if x < 600}
-        <div class="absolute top-8 left-0 smooth-scroll">
+        <div class="absolute top-8 left-0 ">
           <BurgerMenu
             width="225px"
             backgroundColor="#EF4444"
@@ -32,9 +32,7 @@
             menuColor="#10B981"
             paddingTop="50px"
           >
-            <div
-              class="flex justify-evenly items-center flex-col smooth-scroll"
-            >
+            <div class="flex justify-evenly items-center flex-col ">
               <a href="#home" class="text-white text-3xl p-2">Home</a>
               <a href="#about" class="text-white text-3xl p-2 ">About</a>
               <a href="#services" class="text-white text-3xl p-2">Services</a>

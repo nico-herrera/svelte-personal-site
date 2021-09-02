@@ -1,5 +1,5 @@
 <!-- what i offer section -->
-<section class="h-auto bg-green-500 relative scroll-snap-y p-10">
+<section class="h-auto bg-green-500 relative p-10">
   <span id="services" class="absolute -top-24" />
   <div class="flex-center h-10perc">
     <h3
