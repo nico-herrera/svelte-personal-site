@@ -30,6 +30,20 @@
       height: 700px;
     }
 
+    .christmas-border {
+      border-image: linear-gradient(
+        to bottom right,
+        #ef4444 0%,
+        #10b981 25%,
+        #3b82f6 50%,
+        #ef4444 75%,
+        #fbbf24 100%
+      );
+      border-image-slice: 1;
+      border: 2px dotted transparent;
+      background-color: #ef4444;
+    }
+
     .smooth-scroll {
       scroll-behavior: smooth;
     }
