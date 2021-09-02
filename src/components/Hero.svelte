@@ -11,7 +11,7 @@
   style="background-image: url(images/christmas-bg.jpeg)"
   class="h-screen bg-nature w-full bg-no-repeat bg-cover bg-center relative scroll-snap-y"
 >
-  {#if y < 700}
+  {#if y < 500}
     <Snowflakes />
   {/if}
   <div

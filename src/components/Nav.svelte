@@ -32,7 +32,9 @@
             menuColor="#10B981"
             paddingTop="50px"
           >
-            <div class="flex justify-evenly items-center flex-col">
+            <div
+              class="flex justify-evenly items-center flex-col smooth-scroll"
+            >
               <a href="#home" class="text-white text-3xl p-2">Home</a>
               <a href="#about" class="text-white text-3xl p-2 ">About</a>
               <a href="#services" class="text-white text-3xl p-2">Services</a>

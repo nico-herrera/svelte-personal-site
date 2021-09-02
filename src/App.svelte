@@ -30,6 +30,10 @@
       height: 700px;
     }
 
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+
     .flex-right {
       display: flex;
       justify-content: flex-end;
