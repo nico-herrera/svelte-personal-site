@@ -2,30 +2,56 @@
   import Typewriter from "svelte-typewriter";
   import Snowflakes from "./Snowflakes.svelte";
   let y;
+  let x = window.innerWidth;
 </script>
 
 <svelte:window bind:scrollY={y} />
 
 <section
   id="home"
-  style="background-image: url(images/christmas-bg.jpeg)"
-  class="h-screen bg-nature w-full bg-no-repeat bg-cover bg-center relative scroll-snap-y"
+  style={x < 600
+    ? "background-image: url(images/outdoor-tree.jpeg)"
+    : "background-image: url(images/christmas-bg.jpeg)"}
+  class="h-screen w-full bg-no-repeat bg-cover bg-center lg:bg-center relative scroll-snap-y"
 >
   {#if y < 500}
     <Snowflakes />
   {/if}
   <div
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-    w-3/4 md:w-2/5 lg:w-2/5 h-40 lg:h-52 mx-auto flex justify-evenly items-center flex-col border-t-2 border-b-2 border-dashed border-white text-white"
+    w-3/4 md:w-2/5 lg:w-2/5 h-40 lg:h-52 mx-auto flex justify-evenly items-center flex-col border-t-2 border-b-2 {x <
+    600
+      ? 'border-double border-blue-400'
+      : 'border-dashed border-white'}  text-white"
   >
-    <h2 class="text-3xl md:4xl lg:text-5xl xl:text-6xl tracking-wide">
+    <h2
+      class="text-3xl md:4xl lg:text-5xl xl:text-6xl tracking-wide {x < 600
+        ? 'bg-blue-400 text-black bg-opacity-90 p-1'
+        : 'null'}"
+    >
       Nico Herrera
     </h2>
-    <p class="text-lg md:text-xl lg:text-2xl tracking-wide">
+    <p
+      class="text-lg md:text-xl lg:text-2xl {x < 600
+        ? 'bg-blue-400 text-black bg-opacity-90'
+        : 'null'} tracking-wide"
+    >
       <Typewriter interval={50} loop={true}>
-        <span class="text-lg md:text-xl lg:text-2xl">web</span>
-        <span class="text-lg md:text-xl lg:text-2xl">mobile</span>
-        <span class="text-lg md:text-xl lg:text-2xl">full-stack</span>
+        <span
+          class="text-lg md:text-xl lg:text-2xl {x < 600
+            ? 'bg-blue-400 text-black bg-opacity-90'
+            : 'null'}">web</span
+        >
+        <span
+          class="text-lg md:text-xl lg:text-2xl {x < 600
+            ? 'bg-blue-400 text-black bg-opacity-90'
+            : 'null'}">mobile</span
+        >
+        <span
+          class="text-lg md:text-xl lg:text-2xl {x < 600
+            ? 'bg-blue-400 text-black bg-opacity-90'
+            : 'null'}">full-stack</span
+        >
         development
       </Typewriter>
     </p>
