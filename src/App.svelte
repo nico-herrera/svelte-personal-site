@@ -21,8 +21,10 @@
   @tailwind components;
   @tailwind utilities;
 
-  html {
-    scroll-behavior: smooth;
+  @layer base {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   @layer utilities {
